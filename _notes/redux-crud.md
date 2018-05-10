@@ -108,7 +108,7 @@ Take the PostsListContainer as a sample,
 ```
 const mapStateToProps = (state) => {
   return { 
-    postsList: state.posts.postsList
+    posts: state.posts.postsList.posts,
   };
 }
 
@@ -124,4 +124,4 @@ const mapDispatchToProps = (dispatch) => {
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostsList);
 ```
-PostsListContainer keeps track of "postList" global Redux state, 
+PostsListContainer keeps track of "postList" global Redux state and passes "post" and "loading" to presentational.

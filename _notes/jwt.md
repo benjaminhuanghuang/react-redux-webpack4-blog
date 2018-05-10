@@ -8,7 +8,7 @@ Typically this is:
     - User Id, Username, Email, Image URL
     - Any ACL like: isAdmin, isManager etc.
 
-- Signature: A String that was generated using #1 + #2 + “a secret” (that only the server knows), using the algorithm mentioned in #1.
+- Signature: A String that was generated using #1 + #2 + "a secret” (that only the server knows), using the algorithm mentioned in #1.
 
 
 https://jwt.io can show the content of JWT token 
