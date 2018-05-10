@@ -51,6 +51,7 @@
         "redux-logger": "^3.0.6",
         "redux-promise": "^0.5.3",
         "sendgrid": "5.2.3",
-        "serve-favicon": "~2.4.5"
+        "serve-favicon": "~2.4.5",
+        "dotenv":"^5.0.1"
     }
 }

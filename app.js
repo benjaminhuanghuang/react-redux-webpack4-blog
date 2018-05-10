@@ -9,6 +9,9 @@ var router = express.Router();
 var jwt = require('jsonwebtoken');
 //var compression = require('compression');
 
+// import environmental variables from our variables.env file
+require('dotenv').config({ path: 'variables.env' });
+
 //routes
 var users = require('./routes/users');
 var posts = require('./routes/posts');
