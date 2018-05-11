@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "node node_modules/.bin/webpack --config webpack.config.prod.js",
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server"
   },
   "engines": {
     "node": "5.2.0",
