@@ -24,8 +24,8 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    // new webpack.optimize.DedupePlugin(),
-    // new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
     new CompressionPlugin({
       asset: "[path].gz[query]",
@@ -37,7 +37,7 @@ module.exports = {
   ],
 
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
     "alias": {
       "react": "preact-compat",
       "react-dom": "preact-compat"
